@@ -1,0 +1,27 @@
+{
+  "name": "lsf-quiz-site-back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "env-cmd -f .env.dev nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/Lyxas/lsf-quiz-site-back.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/Lyxas/lsf-quiz-site-back/issues"
+  },
+  "homepage": "https://gitlab.com/Lyxas/lsf-quiz-site-back#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.13"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0"
+  }
+}
