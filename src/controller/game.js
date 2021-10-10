@@ -8,7 +8,10 @@ module.exports = {
     getRandomWord(){
         liste = Media.getAllavailableWord()
         rnd = getRandomInt(liste.length)
-        return liste[rnd]
+        response = {
+            data: liste[rnd]
+        }
+        return response
     },
 
     getAvailableWord(){
