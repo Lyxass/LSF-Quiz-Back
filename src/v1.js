@@ -6,7 +6,7 @@ const port = 3000
 app.use(cors())
 
 app.get('/', (req, res) => {
-    res.send('Hello World!')
+    res.send('API is working !')
 })
 
 require("./routes/game.js")(app,"/game")
