@@ -3,7 +3,9 @@ const app = express()
 var cors = require('cors')
 const port = 3000
 
-app.use(cors())
+app.use(cors({
+    origin: 'https://lsf-back.lgzaeau.fr'
+}));
 
 app.get('/', (req, res) => {
     res.send('API is working !')
