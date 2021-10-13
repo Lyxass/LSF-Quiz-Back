@@ -4,7 +4,7 @@ var cors = require('cors')
 const port = 3000
 
 app.use(cors({
-    origin: 'https://lsf-back.lgzaeau.fr'
+    origin: '*'
 }));
 
 app.get('/', (req, res) => {
