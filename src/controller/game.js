@@ -16,5 +16,13 @@ module.exports = {
 
     getAvailableWord(){
         return Media.getAllavailableWord()
+    },
+
+    getRandomLetter(){
+        rnd = getRandomInt(25)
+        return {
+            data: String.fromCharCode(rnd+97)
+        }
+
     }
 }
