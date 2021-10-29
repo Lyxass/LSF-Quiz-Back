@@ -8,3 +8,5 @@ public/media/
 .env.dev
 
 .env.prod
+
+coverage/

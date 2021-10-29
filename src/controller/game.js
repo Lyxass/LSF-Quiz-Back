@@ -7,10 +7,14 @@ function getRandomInt(max) {
 module.exports = {
     getRandomWord(){
         liste = Media.getAllavailableWord()
+        if(liste.length <= 0){
+            return null
+        }
         rnd = getRandomInt(liste.length)
         response = {
             data: liste[rnd]
         }
+        console.log(response)
         return response
     },
 
