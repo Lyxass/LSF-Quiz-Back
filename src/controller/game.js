@@ -5,6 +5,14 @@ function getRandomInt(max) {
 }
 
 module.exports = {
+    /**
+     * Intro
+     * @param1
+     * @returns {{data:String}} Must return an object with attribute data. this attribute must contain the result of the function
+     *      ex : {data : "bonjour"}
+     * @since 1.0.0
+     * @version 1.1.0
+     */
     getRandomWord(){
         liste = Media.getAllavailableWord()
         if(liste.length <= 0){

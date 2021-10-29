@@ -1,5 +1,6 @@
 const GameController = require("../controller/game")
 
+module.exports = function (app, path) {
 
 module.exports = function(app, path)
 {
@@ -11,7 +12,7 @@ module.exports = function(app, path)
         res.status(200).send(response)
     })
 
-    app.get(path+"/available-words",(req,res) =>{
+    app.get(path + "/available-words", (req, res) => {
         res.status(200).send(GameController.getAvailableWord())
     })
 
