@@ -1,9 +1,6 @@
 const GameController = require("../controller/game")
 
 module.exports = function (app, path) {
-
-module.exports = function(app, path)
-{
     app.get(path+"/random-word",(req,res) =>{
         let response = GameController.getRandomWord()
         if(response === null){
@@ -24,3 +21,5 @@ module.exports = function(app, path)
         res.status(200).send(response)
     })
 }
+
+

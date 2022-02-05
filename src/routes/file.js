@@ -20,7 +20,6 @@ module.exports = function(app, path)
         if(fs.existsSync(process.env.PWD+process.env.IMAGES_PATH+req.params.name+".png")){
             res.status(404).send("File not found")
         }
-        res.sendFile(process.env.PWD+process.env.IMAGES_PATH+req.params.name+".png", {root : process.env.PWD})
+        res.sendFile(process.env.IMAGES_PATH+req.params.name+".png", {root : process.env.PWD})
     })
-
 }
